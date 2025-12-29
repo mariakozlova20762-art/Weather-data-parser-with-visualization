@@ -1,0 +1,13 @@
+click
+requests
+matplotlib
+pandas
+python-dotenv
+pytest
+pre-commit
+fastapi 
+uvicorn 
+"python-multipart" 
+fastapi 
+uvicorn 
+"python-multipart" 

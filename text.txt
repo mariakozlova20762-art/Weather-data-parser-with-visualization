@@ -1,0 +1,23 @@
+паутов/
+├── src/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── cli.py
+│   ├── weather_parser.py
+│   ├── visualizer.py
+│   └── config.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_parser.py
+│   └── test_visualizer.py
+├── data/
+│   └── examples/
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── .env.example
+├── .gitignore
+├── .dockerignore
+├── .pre-commit-config.yaml
+├── README.md
+└── pyproject.toml

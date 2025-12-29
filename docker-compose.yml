@@ -1,0 +1,17 @@
+version: '3.8' 
+ 
+services: 
+  weather-parser: 
+    build: . 
+    container_name: weather-parser-app 
+    volumes: 
+      - ./data:/app/data  # для сохранения данных 
+      - ./output:/app/output  # для сохранения графиков 
+    environment: 
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY:-test_key} 
+      - DEFAULT_CITY=${DEFAULT_CITY:-Moscow} 
+      - DEFAULT_DAYS=${DEFAULT_DAYS:-7} 
+      - TEMPERATURE_UNIT=${TEMPERATURE_UNIT:-celsius} 
+      - LANGUAGE=${LANGUAGE:-en} 
+    stdin_open: true 
+    tty: true 
